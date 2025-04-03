@@ -1,0 +1,248 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #101111;
+    background-color: #9a9191;
+}
+
+header {
+    background-color: #98d1d8;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    margin: 0 auto; /* Center the logo */
+    border-radius: 30%;
+}.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+.h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #98d1d8;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Home Page */
+.intro {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+.download-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.download-btn:hover {
+    background-color: #555;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px;
+    border: 2px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    border-radius: 10%;
+}
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: blue;
+    padding: 25px;
+    display: flex;
+}
+.testimonials-col:hover{
+    background: #dfe212;
+}
+.testimonials-col img{
+    width: 50px;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 50px;
+    border-radius: 70%;
+
+}
+.testimonials-col p{
+    margin-top: 15px;
+    text-align: left;
+
+}
+@media(max-width: 700px){
+    .testimonials-col img{
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 30px;
+        border-radius: 50px;
+    }
+}
+
+/* About Page */
+.about {
+    margin: 50px;
+    text-align: center;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    background-color: #ebd7d7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.contact-info {
+    flex: 1; /* Allows the text to take the remaining space */
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Skills Page */
+.skills {
+    margin: 50px;
+    text-align: center;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.developer-col{
+    flex-basis: 31%;
+    background: #ad96c9;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3{
+text-align: center;
+font-weight: 600;
+margin: 10px 0;
+
+}
+.developer-col:hover{
+box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+.row{
+    flex-direction: column;
+}
+}
+
+/* Contact Page */
+.contact {
+    margin: 50px;
+    text-align: center;
+}
+
+.contact form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #555;
+}

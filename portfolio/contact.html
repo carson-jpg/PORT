@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="C:\portfolio\DSC_3338.jpg" alt="My Logo" class="logo"> <!-- Logo Image -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact Me</h1>
+        <p>If you'd like to get in touch, feel free to send me a message!</p>
+        <form action="mailto:isavameshack@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+   <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Clear previous error messages
+        document.getElementById('error-message').innerText = '';
+
+        // Get form values
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Validate form fields
+        if (!name || !email || !message) {
+            document.getElementById('error-message').innerText = 'Please fill in all fields.';
+            return;
+        }
+
+        // Simple email format validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            document.getElementById('error-message').innerText = 'Please enter a valid email address.';
+            return;
+        }
+
+        // If validation passes, submit the form
+        this.submit();
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2025 Isava Meshack. All rights reserved.</p>
+    </footer>
+</body>
+</html>
